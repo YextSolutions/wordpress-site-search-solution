@@ -1,0 +1,18 @@
+{
+  "$id": "darwinism-upward-writing-6cd47",
+  "$schema": "https://schema.yext.com/config/pages/site-config/v1",
+  "siteName": "Site Search",
+  "repoConfig": {
+    "targetRepoName": "generic-site-search-template-${{businessId}}",
+    "templateRepo": "https://github.com/yext-pages/generic-site-search-template-3649040"
+  },
+  "publishingConfig": {
+    "pinnedStagingBranchName": "refs/heads/master",
+    "pinnedProductionBranchName": "refs/heads/master",
+    "stagingCredentials": {
+      "username": "test",
+      "password": "test"
+    }
+  },
+  "features": []
+}
