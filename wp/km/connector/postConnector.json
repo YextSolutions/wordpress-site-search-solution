@@ -139,7 +139,10 @@
       "header": "Photo Gallery",
       "subfieldPath": [
         {
-          "name": "clickthroughUrl"
+          "name": "image"
+        },
+        {
+          "name": "url"
         }
       ]
     },
