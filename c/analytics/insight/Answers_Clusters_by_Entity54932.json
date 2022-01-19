@@ -1,0 +1,37 @@
+{
+  "$id": "c_Answers_Clusters_by_Entity54932",
+  "$schema": "https://schema.yext.com/config/analytics/insight/v1",
+  "name": "Answers Clusters by Entity",
+  "description": "Answers Clusters by Entity",
+  "query": {
+    "metrics": [
+      "yext/ANSWERS_CLUSTERS"
+    ],
+    "fields": [
+      "entityId",
+      "name",
+      "address",
+      "yext/derivedField-postalCode",
+      "yext/derivedField-city"
+    ],
+    "dimensions": [
+      "yext/ENTITIES"
+    ],
+    "filters": [
+      {
+        "filter": "yext/date",
+        "in": "DAYS_30"
+      }
+    ]
+  },
+  "display": {
+    "table": {
+      "sort": {
+        "column": {
+          "metric": "yext/ANSWERS_CLUSTERS"
+        },
+        "descending": true
+      }
+    }
+  }
+}

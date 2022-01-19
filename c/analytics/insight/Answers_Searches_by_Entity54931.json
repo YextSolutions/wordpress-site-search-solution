@@ -1,0 +1,37 @@
+{
+  "$id": "c_Answers_Searches_by_Entity54931",
+  "$schema": "https://schema.yext.com/config/analytics/insight/v1",
+  "name": "Answers Searches by Entity",
+  "description": "Answers Searches by Entity",
+  "query": {
+    "metrics": [
+      "yext/ANSWERS_SEARCHES"
+    ],
+    "fields": [
+      "entityId",
+      "name",
+      "address",
+      "yext/derivedField-postalCode",
+      "yext/derivedField-city"
+    ],
+    "dimensions": [
+      "yext/ENTITIES"
+    ],
+    "filters": [
+      {
+        "filter": "yext/date",
+        "in": "DAYS_30"
+      }
+    ]
+  },
+  "display": {
+    "table": {
+      "sort": {
+        "column": {
+          "metric": "yext/ANSWERS_SEARCHES"
+        },
+        "descending": true
+      }
+    }
+  }
+}

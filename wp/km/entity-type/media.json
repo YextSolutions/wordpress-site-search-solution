@@ -1,0 +1,66 @@
+{
+  "$id": "wp_media",
+  "$schema": "https://schema.yext.com/config/km/entity-type/v1",
+  "description": "",
+  "displayName": "Media",
+  "enabled": true,
+  "field": [
+    {
+      "id": "name",
+      "required": true
+    },
+    {
+      "id": "wp_alternativeCaption",
+      "required": false
+    },
+    {
+      "id": "wp_author",
+      "required": false
+    },
+    {
+      "id": "wp_authorDescription",
+      "required": false
+    },
+    {
+      "id": "wp_authorLandingPage",
+      "required": false
+    },
+    {
+      "id": "wp_caption",
+      "required": false
+    },
+    {
+      "id": "wp_dateModified",
+      "required": false
+    },
+    {
+      "id": "wp_datePosted",
+      "required": false
+    },
+    {
+      "id": "wp_height",
+      "required": false
+    },
+    {
+      "id": "wp_sourceURL",
+      "required": false
+    },
+    {
+      "id": "wp_width",
+      "required": false
+    },
+    {
+      "id": "folder",
+      "required": false
+    },
+    {
+      "id": "labels",
+      "required": false
+    },
+    {
+      "id": "entityId",
+      "required": true
+    }
+  ],
+  "pluralDisplayName": "Media"
+}

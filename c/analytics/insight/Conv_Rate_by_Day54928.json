@@ -1,0 +1,23 @@
+{
+  "$id": "c_Conv_Rate_by_Day54928",
+  "$schema": "https://schema.yext.com/config/analytics/insight/v1",
+  "name": "Conv. Rate by Day",
+  "description": "Conv. Rate by Day",
+  "query": {
+    "metrics": [
+      "yext/CONVERSION_RATE"
+    ],
+    "dimensions": [
+      "yext/DAYS"
+    ],
+    "filters": [
+      {
+        "filter": "yext/date",
+        "in": "DAYS_30"
+      }
+    ]
+  },
+  "display": {
+    "line": {}
+  }
+}

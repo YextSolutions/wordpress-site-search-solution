@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.yext.com/config/answers/answers-config/v1",
+  "$id": "wordpress-site-search",
+  "name": "WordPress Site Search",
+  "supportedLocales": [],
+  "countryRestrictions": [],
+  "verticals": {
+    "posts": {
+      "entityTypes": [
+        "wp_post"
+      ],
+      "name": "Posts",
+      "savedSearchId": "829102834",
+      "searchableFields": {
+        "wp_content": {
+          "documentSearch": true
+        },
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "name": {
+          "semanticTextSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    }
+  },
+  "localizations": {},
+  "additionalSearchablePlaces": [],
+  "querySuggestions": {
+    "disablePopularQueries": false,
+    "verticalPromptsOnEmpty": false,
+    "popularQueriesBlacklistedTerms": [],
+    "universalPrompts": [],
+    "verticalPrompts": {
+      "posts": [
+        "[[name]]"
+      ]
+    }
+  }
+}

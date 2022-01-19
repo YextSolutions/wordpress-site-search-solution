@@ -1,0 +1,61 @@
+{
+  "$id": "wp_page",
+  "$schema": "https://schema.yext.com/config/km/field-presentation/v1",
+  "entityType": "wp_page",
+  "displayName": "Page",
+  "presentationEntries": [
+    {
+      "displayName": "Content",
+      "entryType": "DIVIDER"
+    },
+    {
+      "displayName": "Core Information",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "entityId"
+        },
+        {
+          "id": "name"
+        },
+        {
+          "id": "landingPageUrl"
+        },
+        {
+          "id": "wp_datePosted"
+        },
+        {
+          "id": "wp_dateModified"
+        },
+        {
+          "id": "wp_author"
+        },
+        {
+          "id": "wp_authorDescription"
+        },
+        {
+          "id": "wp_authorLandingPage"
+        },
+        {
+          "id": "wp_activeOnAnswers"
+        }
+      ]
+    },
+    {
+      "displayName": "Other",
+      "entryType": "DIVIDER"
+    },
+    {
+      "displayName": "Internal Use Only",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "folder"
+        },
+        {
+          "id": "labels"
+        }
+      ]
+    }
+  ]
+}

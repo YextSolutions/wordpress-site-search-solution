@@ -1,0 +1,25 @@
+{
+  "$id": "c_Answers_Clicks_by_Day54926",
+  "$schema": "https://schema.yext.com/config/analytics/insight/v1",
+  "name": "Answers Clicks by Day",
+  "description": "Answers Clicks by Day",
+  "query": {
+    "metrics": [
+      "yext/ANSWERS_CLICKS"
+    ],
+    "dimensions": [
+      "yext/DAYS"
+    ],
+    "filters": [
+      {
+        "filter": "yext/date",
+        "in": "DAYS_30"
+      }
+    ]
+  },
+  "display": {
+    "hero": {
+      "aggregation": "SUM"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$id": "c_Popular_Clusters54939",
+  "$schema": "https://schema.yext.com/config/analytics/insight/v1",
+  "name": "Popular Clusters",
+  "description": "Answers Clicks by Search Term Cluster",
+  "query": {
+    "metrics": [
+      "yext/ANSWERS_CLICKS"
+    ],
+    "dimensions": [
+      "yext/ANSWERS_CLUSTER"
+    ],
+    "filters": [
+      {
+        "filter": "yext/date",
+        "in": "DAYS_30"
+      }
+    ]
+  },
+  "display": {
+    "table": {
+      "sort": {
+        "column": {
+          "metric": "yext/ANSWERS_CLICKS"
+        },
+        "descending": true
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$id": "829102834",
+  "$schema": "https://schema.yext.com/config/km/saved-filter/v1",
+  "name": "WP Posts - Active on Answers",
+  "filter": {
+    "entityField": [
+      {
+        "fieldId": "wp_activeOnAnswers",
+        "filterOption": {
+          "choice": [
+            "NO"
+          ],
+          "type": "IS_NOT"
+        }
+      }
+    ],
+    "entityType": [
+      {
+        "entityTypeId": [
+          "wp_post"
+        ],
+        "type": "IS"
+      }
+    ]
+  }
+}

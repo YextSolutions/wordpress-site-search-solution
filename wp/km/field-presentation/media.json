@@ -1,0 +1,72 @@
+{
+  "$id": "wp_media",
+  "$schema": "https://schema.yext.com/config/km/field-presentation/v1",
+  "entityType": "wp_media",
+  "displayName": "Media",
+  "presentationEntries": [
+    {
+      "displayName": "Content",
+      "entryType": "DIVIDER"
+    },
+    {
+      "displayName": "Core Information",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "name",
+          "visibleOnAdd": true
+        },
+        {
+          "id": "entityId",
+          "visibleOnAdd": true
+        },
+        {
+          "id": "wp_sourceURL"
+        },
+        {
+          "id": "wp_width"
+        },
+        {
+          "id": "wp_height"
+        },
+        {
+          "id": "wp_caption"
+        },
+        {
+          "id": "wp_alternativeCaption"
+        },
+        {
+          "id": "wp_author"
+        },
+        {
+          "id": "wp_authorDescription"
+        },
+        {
+          "id": "wp_authorLandingPage"
+        },
+        {
+          "id": "wp_datePosted"
+        },
+        {
+          "id": "wp_dateModified"
+        }
+      ]
+    },
+    {
+      "displayName": "Other",
+      "entryType": "DIVIDER"
+    },
+    {
+      "displayName": "Internal Use Only",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "folder"
+        },
+        {
+          "id": "labels"
+        }
+      ]
+    }
+  ]
+}

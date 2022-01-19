@@ -1,0 +1,83 @@
+{
+  "$id": "c_142776",
+  "$schema": "https://schema.yext.com/config/analytics/dashboard/v1",
+  "name": "Site Search Dashboard",
+  "insights": [
+    {
+      "insight": "c_Answers_Sessions_by_Day54906",
+      "x": 0,
+      "y": 0,
+      "width": 2,
+      "height": 1
+    },
+    {
+      "insight": "c_Answers_Searches_by_Day54907",
+      "x": 2,
+      "y": 0,
+      "width": 2,
+      "height": 1
+    },
+    {
+      "insight": "c_Answers_Clicks_by_Day54926",
+      "x": 4,
+      "y": 0,
+      "width": 2,
+      "height": 1
+    },
+    {
+      "insight": "c_Answers_Click_Through_Rate_by_Day54929",
+      "x": 0,
+      "y": 1,
+      "width": 3,
+      "height": 1
+    },
+    {
+      "insight": "c_Conv_Rate_by_Day54928",
+      "x": 3,
+      "y": 1,
+      "width": 3,
+      "height": 1
+    },
+    {
+      "insight": "c_Popular_Searches54937",
+      "x": 0,
+      "y": 2,
+      "width": 2,
+      "height": 1
+    },
+    {
+      "insight": "c_Popular_Results54938",
+      "x": 2,
+      "y": 2,
+      "width": 2,
+      "height": 1
+    },
+    {
+      "insight": "c_Popular_Clusters54939",
+      "x": 4,
+      "y": 2,
+      "width": 2,
+      "height": 1
+    },
+    {
+      "insight": "c_Searches_with_No_Results54934",
+      "x": 0,
+      "y": 3,
+      "width": 3,
+      "height": 1
+    },
+    {
+      "insight": "c_Searches_with_No_Clicks54935",
+      "x": 3,
+      "y": 3,
+      "width": 3,
+      "height": 1
+    }
+  ],
+  "filters": [
+    {
+      "filter": "yext/date",
+      "in": "WEEKS_12"
+    }
+  ]
+}

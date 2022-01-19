@@ -1,0 +1,30 @@
+{
+  "$id": "c_Popular_Searches54937",
+  "$schema": "https://schema.yext.com/config/analytics/insight/v1",
+  "name": "Popular Searches",
+  "description": "Answers Searches by Search Term",
+  "query": {
+    "metrics": [
+      "yext/ANSWERS_SEARCHES"
+    ],
+    "dimensions": [
+      "yext/ANSWERS_SEARCH_TERM"
+    ],
+    "filters": [
+      {
+        "filter": "yext/date",
+        "in": "DAYS_30"
+      }
+    ]
+  },
+  "display": {
+    "table": {
+      "sort": {
+        "column": {
+          "metric": "yext/ANSWERS_SEARCHES"
+        },
+        "descending": true
+      }
+    }
+  }
+}

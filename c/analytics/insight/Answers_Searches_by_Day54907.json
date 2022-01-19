@@ -1,0 +1,25 @@
+{
+  "$id": "c_Answers_Searches_by_Day54907",
+  "$schema": "https://schema.yext.com/config/analytics/insight/v1",
+  "name": "Answers Searches by Day",
+  "description": "Answers Searches by Day",
+  "query": {
+    "metrics": [
+      "yext/ANSWERS_SEARCHES"
+    ],
+    "dimensions": [
+      "yext/DAYS"
+    ],
+    "filters": [
+      {
+        "filter": "yext/date",
+        "in": "DAYS_30"
+      }
+    ]
+  },
+  "display": {
+    "hero": {
+      "aggregation": "SUM"
+    }
+  }
+}

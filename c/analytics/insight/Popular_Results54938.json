@@ -1,0 +1,37 @@
+{
+  "$id": "c_Popular_Results54938",
+  "$schema": "https://schema.yext.com/config/analytics/insight/v1",
+  "name": "Popular Results",
+  "description": "Answers Clicks by Entity",
+  "query": {
+    "metrics": [
+      "yext/ANSWERS_CLICKS"
+    ],
+    "fields": [
+      "entityId",
+      "name",
+      "address",
+      "yext/derivedField-postalCode",
+      "yext/derivedField-city"
+    ],
+    "dimensions": [
+      "yext/ENTITIES"
+    ],
+    "filters": [
+      {
+        "filter": "yext/date",
+        "in": "DAYS_30"
+      }
+    ]
+  },
+  "display": {
+    "table": {
+      "sort": {
+        "column": {
+          "metric": "yext/ANSWERS_CLICKS"
+        },
+        "descending": true
+      }
+    }
+  }
+}
