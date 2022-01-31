@@ -213,7 +213,10 @@
     }
   ],
   "scheduleConfig": {
-    "useSourceSchedule": false,
-    "runMode": "COMPREHENSIVE"
-  }
+    "customSchedule": {
+      "timeZone": "America/New_York",
+      "startDate": "2022-01-31",
+      "startTime": "00:00",
+      "frequencyType": "DAILY"
+    }
 }
