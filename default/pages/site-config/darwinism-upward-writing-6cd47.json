@@ -4,7 +4,7 @@
   "siteName": "WordPress Site Search",
   "repoConfig": {
     "targetRepoName": "wordpress-site-search-template-${{businessId}}",
-    "templateRepo": "https://github.com/YextSolutions/wordpress-site-search-pages-config"
+    "templateRepo": "https://github.com/yext-pages/wordpress-answers-template"
   },
   "publishingConfig": {
     "pinnedStagingBranchName": "refs/heads/master",
