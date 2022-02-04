@@ -35,8 +35,7 @@
     "universalPrompts": [],
     "verticalPrompts": {
       "posts": [
-        "[[name]]",
-        "${{businessId}}"
+        "[[name]]"
       ]
     }
   }
