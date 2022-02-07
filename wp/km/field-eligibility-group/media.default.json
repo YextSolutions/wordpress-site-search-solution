@@ -1,0 +1,18 @@
+{
+  "$id": "wp_media.default",
+  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+  "name": "Media-default",
+  "entityType": "wp_media",
+  "fields": [
+    "wp_alternativeCaption",
+    "wp_author",
+    "wp_authorDescription",
+    "wp_authorLandingPage",
+    "wp_caption",
+    "wp_dateModified",
+    "wp_datePosted",
+    "wp_height",
+    "wp_sourceURL",
+    "wp_width"
+  ]
+}

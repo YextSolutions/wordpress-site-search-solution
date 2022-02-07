@@ -1,0 +1,21 @@
+{
+  "$id": "wp_post.default",
+  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+  "name": "Post-default",
+  "entityType": "wp_post",
+  "fields": [
+    "landingPageUrl",
+    "wp_author",
+    "wp_authorDescription",
+    "wp_authorLandingPage",
+    "wp_categories",
+    "wp_content",
+    "wp_dateModified",
+    "wp_datePosted",
+    "wp_isSticky",
+    "wp_postExcerpt",
+    "wp_tags",
+    "photoGallery",
+    "wp_activeOnAnswers"
+  ]
+}
