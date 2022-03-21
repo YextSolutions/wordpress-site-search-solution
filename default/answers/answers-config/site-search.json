@@ -10,7 +10,7 @@
         "wp_post"
       ],
       "name": "Posts",
-      "savedSearchId": "829102834",
+      "savedSearchId": "wp_829102834",
       "searchableFields": {
         "wp_content": {
           "documentSearch": true
