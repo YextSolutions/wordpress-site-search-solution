@@ -89,7 +89,7 @@
       {
         "type": "JSON",
         "header": "Photo Gallery",
-        "path": "_embedded.\"wp:featuredmedia\"[].link"
+        "path": "yoast_head_json.og_image[].url"
       },
       {
         "type": "JSON",
