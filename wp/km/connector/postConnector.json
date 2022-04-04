@@ -5,30 +5,14 @@
   "entityType": "wp_post",
   "source": {
     "sourceConfig": {
-      "apiPullConfig": {
-        "requestType": "GET",
-        "url": "${{wordpressFullDomain}}/wp-json/wp/v2/posts?_embed",
-        "paginationControl": {
-          "pageBasedPagination": {
-            "pageKey": "page",
-            "pageStartValue": 1,
-            "totalPages": {
-              "key": "X-WP-TotalPages",
-              "inHeader": true
-            },
-            "limitKey": "X-WP-Total",
-            "limitValue": 0
-          }
-        },
-        "headers": {},
-        "queryParams": {},
-        "dataFormat": "JSON"
+      "nativeSourceConfig": {
+        "source": "wordpress",
+        "operation": "fetchContent",
+        "inputs": {
+          "contentType": "posts",
+          "wordpressFullDomain": "${{wordpressFullDomain}}"
+        }
       }
-    },
-    "baseSelector": {
-      "type": "JSON",
-      "header": "Entity Container",
-      "path": "[]"
     },
     "selectors": [
       {
