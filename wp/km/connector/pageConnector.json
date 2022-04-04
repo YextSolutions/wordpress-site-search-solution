@@ -4,7 +4,6 @@
   "displayName": "WordPress Page Connector",
   "entityType": "wp_page",
   "source": {
-  "source": {
     "sourceConfig": {
       "nativeSourceConfig": {
         "source": "wordpress",
