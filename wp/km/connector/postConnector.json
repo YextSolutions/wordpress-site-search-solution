@@ -1,36 +1,18 @@
 {
   "$id": "wp_postConnector",
-  "$schema": "https://schema.yext.com/config/km/connector/v4",
+  "$schema": "https://schema.yext.com/config/km/connector/v2",
   "displayName": "WordPress Post Connector",
-  "entityTypes": [
-    "wp_post"
-  ],
+  "entityType": "wp_post",
   "source": {
     "sourceConfig": {
-      "apiPullConfig": {
-        "requestType": "GET",
-        "url": "https://www.angrybirds.com/wp-json/wp/v2/posts?_embed",
-        "paginationControl": {
-          "pageBasedPagination": {
-            "pageKey": "page",
-            "pageStartValue": 1,
-            "totalPages": {
-              "key": "X-WP-TotalPages",
-              "inHeader": true
-            },
-            "limitKey": "X-WP-Total",
-            "limitValue": 0
-          }
-        },
-        "headers": {},
-        "queryParams": {},
-        "dataFormat": "JSON"
+      "nativeSourceConfig": {
+        "source": "wordpress",
+        "operation": "fetchContent",
+        "inputs": {
+          "contentType": "posts",
+          "wordpressFullDomain": "${{wordpressFullDomain}}"
+        }
       }
-    },
-    "baseSelector": {
-      "type": "JSON",
-      "header": "Entity Container",
-      "path": "[]"
     },
     "selectors": [
       {
@@ -91,7 +73,7 @@
       {
         "type": "JSON",
         "header": "Photo Gallery",
-        "path": "_embedded.\"wp:featuredmedia\"[].link"
+        "path": "yoast_head_json.og_image[].url"
       },
       {
         "type": "JSON",
@@ -148,8 +130,8 @@
   ],
   "mappings": [
     {
-      "header": "Photo Gallery",
       "field": "photoGallery",
+      "header": "Photo Gallery",
       "subfieldPath": [
         {
           "name": "image"
@@ -157,94 +139,80 @@
         {
           "name": "url"
         }
-      ],
-      "clearValueIfBlank": false
+      ]
     },
     {
-      "header": "Landing Page URL",
       "field": "landingPageUrl",
-      "subfieldPath": [],
-      "clearValueIfBlank": false
+      "header": "Landing Page URL",
+      "subfieldPath": []
     },
     {
-      "header": "Categories",
       "field": "wp_categories",
-      "subfieldPath": [],
-      "clearValueIfBlank": false
+      "header": "Categories",
+      "subfieldPath": []
     },
     {
-      "header": "Entity ID",
-      "field": "entityId",
-      "subfieldPath": [],
-      "clearValueIfBlank": false
-    },
-    {
-      "header": "Is Sticky",
-      "field": "wp_isSticky",
-      "subfieldPath": [],
-      "clearValueIfBlank": false
-    },
-    {
-      "header": "Author Landing Page",
-      "field": "wp_authorLandingPage",
-      "subfieldPath": [],
-      "clearValueIfBlank": false
-    },
-    {
-      "header": "Author Description",
-      "field": "wp_authorDescription",
-      "subfieldPath": [],
-      "clearValueIfBlank": false
-    },
-    {
-      "header": "Date Posted",
-      "field": "wp_datePosted",
-      "subfieldPath": [],
-      "clearValueIfBlank": false
-    },
-    {
-      "header": "Author",
-      "field": "wp_author",
-      "subfieldPath": [],
-      "clearValueIfBlank": false
-    },
-    {
-      "header": "Date Modified",
-      "field": "wp_dateModified",
-      "subfieldPath": [],
-      "clearValueIfBlank": false
-    },
-    {
-      "header": "Tags",
-      "field": "wp_tags",
-      "subfieldPath": [],
-      "clearValueIfBlank": false
-    },
-    {
-      "header": "Name",
-      "field": "name",
-      "subfieldPath": [],
-      "clearValueIfBlank": false
-    },
-    {
-      "header": "Content",
-      "field": "wp_content",
-      "subfieldPath": [
-        {
-          "name": "json"
-        }
-      ],
-      "clearValueIfBlank": false
-    },
-    {
-      "header": "Post Excerpt",
       "field": "wp_postExcerpt",
+      "header": "Post Excerpt",
       "subfieldPath": [
         {
           "name": "json"
         }
-      ],
-      "clearValueIfBlank": false
+      ]
+    },
+    {
+      "field": "wp_dateModified",
+      "header": "Date Modified",
+      "subfieldPath": []
+    },
+    {
+      "field": "name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "entityId",
+      "header": "Entity ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "wp_content",
+      "header": "Content",
+      "subfieldPath": [
+        {
+          "name": "json"
+        }
+      ]
+    },
+    {
+      "field": "wp_isSticky",
+      "header": "Is Sticky",
+      "subfieldPath": []
+    },
+    {
+      "field": "wp_authorLandingPage",
+      "header": "Author Landing Page",
+      "subfieldPath": []
+    },
+    {
+      "field": "wp_authorDescription",
+      "header": "Author Description",
+      "subfieldPath": []
+    },
+    {
+      "field": "wp_datePosted",
+      "header": "Date Posted",
+      "subfieldPath": []
+    },
+    {
+      "field": "wp_author",
+      "header": "Author",
+      "subfieldPath": []
+    },
+    {
+      "field": "wp_tags",
+      "header": "Tags",
+      "subfieldPath": []
     }
   ],
   "scheduleConfig": {
@@ -255,9 +223,5 @@
       "frequencyType": "DAILY"
     },
     "runMode": "COMPREHENSIVE"
-  },
-  "comprehensiveModeConfig": {
-    "comprehensiveSet": "ENTITIES_CREATED_BY_THIS_CONNECTOR",
-    "actionOnMissingEntities": "DELETE"
   }
 }
