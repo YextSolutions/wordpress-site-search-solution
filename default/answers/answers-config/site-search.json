@@ -12,26 +12,32 @@
       "name": "Posts",
       "savedSearchId": "829102834",
       "searchableFields": {
-        "wp_content": {
-          "documentSearch": true
-        },
         "builtin.entityType": {
           "nlpFilter": true
         },
         "name": {
           "semanticTextSearch": true
+        },
+        "wp_categories": {
+          "facet": true
+        },
+        "wp_content": {
+          "documentSearch": true
         }
       },
       "sortBys": [],
-      "source": "KNOWLEDGE_MANAGER"
+      "source": "YEXT"
     }
   },
   "localizations": {},
   "additionalSearchablePlaces": [],
+  "richTextV2ToHTML": true,
+  "markdownToHTML": true,
   "querySuggestions": {
     "disablePopularQueries": false,
     "verticalPromptsOnEmpty": false,
     "popularQueriesBlacklistedTerms": [],
+    "popularQueriesBlacklistedRegex": [],
     "universalPrompts": [],
     "verticalPrompts": {
       "posts": [
