@@ -5,25 +5,9 @@
   "group": "NONE",
   "localization": "PRIMARY_ONLY",
   "type": {
-    "richTextType": {
-      "supportedFormat": [
-        "BLOCK_QUOTE",
-        "BOLD",
-        "BULLETED_LIST",
-        "CODE_BLOCK",
-        "CODE_SPAN",
-        "HEADINGS",
-        "HORIZONTAL_LINE",
-        "HYPERLINK",
-        "IMAGE",
-        "ITALICS",
-        "NUMBERED_LIST",
-        "STRIKETHROUGH",
-        "SUBSCRIPT",
-        "SUPERSCRIPT",
-        "UNDERLINE"
-      ]
+    "richTextV2Type": {
+      "maxLength": 100000
     }
   },
-  "typeId": "richText"
+  "typeId": "richTextV2"
 }
