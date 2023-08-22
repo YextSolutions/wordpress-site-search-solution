@@ -1,8 +1,10 @@
 {
   "$id": "wp_pageConnector",
-  "$schema": "https://schema.yext.com/config/km/connector/v2",
+  "$schema": "https://schema.yext.com/config/km/connector/v4",
   "displayName": "WordPress Page Connector",
-  "entityType": "wp_page",
+  "entityTypes": [
+    "wp_page"
+  ],
   "source": {
     "sourceConfig": {
       "nativeSourceConfig": {
@@ -137,5 +139,10 @@
       "frequencyType": "DAILY"
     },
     "runMode": "COMPREHENSIVE"
-  }
+  },
+  ,
+    "comprehensiveModeConfig": {
+        "comprehensiveSet": "ENTITIES_CREATED_BY_THIS_CONNECTOR",
+        "actionOnMissingEntities": "DELETE"
+    }
 }
