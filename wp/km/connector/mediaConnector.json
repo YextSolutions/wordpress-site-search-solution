@@ -1,8 +1,10 @@
 {
   "$id": "wp_mediaConnector",
-  "$schema": "https://schema.yext.com/config/km/connector/v2",
+  "$schema": "https://schema.yext.com/config/km/connector/v4",
   "displayName": "WordPress Media Connector",
-  "entityType": "wp_media",
+  "entityTypes": [
+    "wp_media"
+  ],
   "source": {
     "sourceConfig": {
       "nativeSourceConfig": {
@@ -177,5 +179,9 @@
       "frequencyType": "DAILY"
     },
     "runMode": "COMPREHENSIVE"
-  }
+  },
+    "comprehensiveModeConfig": {
+        "comprehensiveSet": "ENTITIES_CREATED_BY_THIS_CONNECTOR",
+        "actionOnMissingEntities": "DELETE"
+    }
 }
