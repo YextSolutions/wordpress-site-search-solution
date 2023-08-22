@@ -1,5 +1,5 @@
 {
-    "$id": "smolder-commuting-override-f9211",
+    "$id": "wordpress-site-search-solution",
     "$schema": "https://schema.yext.com/config/pages/repository/v1",
     "repoUrl": "https://github.com/yext-pages/wordpress-site-search-template-${{businessId}}",
     "templateRepo": "https://github.com/yext-pages/wordpress-answers-template"
