@@ -140,7 +140,6 @@
     },
     "runMode": "COMPREHENSIVE"
   },
-  ,
     "comprehensiveModeConfig": {
         "comprehensiveSet": "ENTITIES_CREATED_BY_THIS_CONNECTOR",
         "actionOnMissingEntities": "DELETE"
