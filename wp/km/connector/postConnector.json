@@ -1,8 +1,10 @@
 {
   "$id": "wp_postConnector",
-  "$schema": "https://schema.yext.com/config/km/connector/v2",
+  "$schema": "https://schema.yext.com/config/km/connector/v4",
   "displayName": "WordPress Post Connector",
-  "entityType": "wp_post",
+  "entityTypes": [
+    "wp_post"
+  ],
   "source": {
     "sourceConfig": {
       "nativeSourceConfig": {
@@ -223,5 +225,9 @@
       "frequencyType": "DAILY"
     },
     "runMode": "COMPREHENSIVE"
-  }
+  },
+    "comprehensiveModeConfig": {
+        "comprehensiveSet": "ENTITIES_CREATED_BY_THIS_CONNECTOR",
+        "actionOnMissingEntities": "DELETE"
+    }
 }
